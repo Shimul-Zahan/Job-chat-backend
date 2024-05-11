@@ -6,7 +6,6 @@ app.use(express.static('public'));
 const port = process.env.PORT || 5001;
 const cors = require('cors');
 const { default: mongoose } = require('mongoose');
-const userRoutes = require('./routes/userRoute')
 const chatRoutes = require('./routes/chatRoutes')
 const messageRoutes = require('./routes/messageRoutes')
 
@@ -28,7 +27,6 @@ app.get('/api/chat/:id', (req, res) => {
     res.json(singleChat);
 })
 
-app.use('/api/user', userRoutes)
 app.use('/api/chat', chatRoutes)
 app.use('/api', messageRoutes)
 app.use('/home', messageRoutes)
