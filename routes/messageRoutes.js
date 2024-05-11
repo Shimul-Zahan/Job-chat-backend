@@ -5,5 +5,7 @@ const router = express.Router();
 
 router.post('/send-message', upload.single('image'), addMessage);
 router.get('/get-message/:recieverId/:senderId', getMessages);
+router.get('/get', getMessages);
+// hekll
 
 module.exports = router
