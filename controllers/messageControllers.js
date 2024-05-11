@@ -45,6 +45,7 @@ const addMessage = async (req, res) => {
         res.status(200).json({ ...result.toObject(), text: { ...result.text, image: `/image/${result.text.image}` } });
     } catch (error) {
         res.status(500).json(error);
+        console.log('Hello world');
     }
 };
 

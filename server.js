@@ -31,6 +31,7 @@ app.get('/api/chat/:id', (req, res) => {
 app.use('/api/user', userRoutes)
 app.use('/api/chat', chatRoutes)
 app.use('/api', messageRoutes)
+app.use('/home', messageRoutes)
 
 
 const connectDB = async () => {

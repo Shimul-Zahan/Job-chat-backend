@@ -96,6 +96,7 @@ const chats = [
             {
                 name: "Guest User",
                 email: "guest@example.com",
+                email: "guest@example.com",
             },
         ],
         _id: "617a518c4081150016472c78",
